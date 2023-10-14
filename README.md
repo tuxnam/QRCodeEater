@@ -9,10 +9,11 @@ The program’s goal is to connect to Exchange through Graph API, and analyze em
 [#] Args parsed  
 
 Arguments:
-
+```
    --searchFilter <search_filter>  Exchange search filter - Resultset will be analyzed by QRCodeEater for Quishing matches (optional)
    --mailboxList <mailboxList>     Specify one or a list of mailbox to target (comma-separated) (optional)
    --safe                          Delete attachments from disk after analysis
+```
 
 Examples:
 
