@@ -3,6 +3,9 @@
 This program detects attempt of email quishing using Azure Computer vision. 
 The program’s goal is to connect to Exchange through Graph API, and analyze emails in a mailbox, a list of mailboxes or resulting from a filter query. All emails with attachments are filtered out to keep only images content-types. Resulting attachments are downloaded, send to a Computer Vision prediction model built in Azure, and based on the results (probability threshold defined in a configuration file), defined as suspicious or not. Suspicious attachments are further decoded by a QRCode library and the resulting URL is added to the resulting analysis. The program outputs a .csv file with all the emails analyzed which contains a potentially malicious QR Code.
 
+**Notes:**
+- Exchange filter is not yet implemented, for now only mailbox list is supported. 
+
 ---
 
 [#] QRCodeEater, a simple program developed for learning purposes, created by @Guillaume B.
