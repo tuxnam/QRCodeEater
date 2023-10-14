@@ -1,0 +1,14 @@
+{
+  "Settings": {
+    "ClientId": "",
+    "ClientSecret": "",
+    "TenantId": "",
+    "Scope": "https://graph.microsoft.com/.default",
+    "QuarantineMailbox": "",
+    "DownloadPath": "",
+    "PredictionKey": "",
+    "PredictionProjectID": "",
+    "ModelName": "",
+    "SuspiciousThreshold": 0.75
+  }
+}
