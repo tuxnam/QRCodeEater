@@ -88,8 +88,10 @@ class Program {
       _resultingAttachmentsList.Sort((p, q) => p.mailID.CompareTo(q.mailID));
 
       foreach(Attachment result in _resultingAttachmentsList){
-        Mail m = _mailsList.Find(item => item.id == result.mailID);
-        resultingList.Add(new Tuple<Mail, Attachment>(m,result));
+        if(result.isSuspicious){
+          Mail m = _mailsList.Find(item => item.id == result.mailID);
+          resultingList.Add(new Tuple<Mail, Attachment>(m,result));
+        }
       }
 
       CSVHandler.CreateCSV(resultingList,outputPath);
